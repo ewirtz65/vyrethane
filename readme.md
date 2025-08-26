@@ -1,7 +1,9 @@
 # Vyrethane City Markdown Generator
 
 This Node.js tool processes a CSV of city data and outputs formatted markdown entries.
+
 Edit config.js to point to your ollama
+
 Edit /data/cultures.js to match your world
 
 
