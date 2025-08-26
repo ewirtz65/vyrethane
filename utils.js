@@ -338,7 +338,7 @@ async function formatMarkdown(settlement, ageInfo, events) {
     tavernTypes.push('seedy');
   }
   tavernTypes.push('adventurer-hub');
-  
+  const townQuality = rateTownQuality(settlement);
   const [taverns, leaderData, landmarkDetails, burgDescription] = await Promise.all([
     generateTavernsBatchJSON(settlement, tavernTypes, false),
     generateLeaderJSON(settlement, settlement.size, ageInfo.age, isCapital, useApi),
@@ -347,7 +347,7 @@ async function formatMarkdown(settlement, ageInfo, events) {
       ? generateCapitalDescriptionJSON(settlement, geoClassification, useApi)
       : generateBurgDescriptionJSON(settlement, geoClassification,townQuality, useApi)
   ]);
-const townQuality = rateTownQuality(settlement);
+
 
   const leaderInfo = formatLeaderJSON(leaderData);
   
