@@ -208,7 +208,7 @@ function pickShops(settlement, exportItems = [], importItems = []) {
     // Food Items
     'Beef Jerky': 'Butcher', 'Ocean Tuna': 'Butcher', 'Mountain Goat Jerky': 'Butcher',
     'River Trout': 'Butcher', 'Royal Venison': 'Butcher',
-    'Wheat': 'Baker', 'Mountain Wheat': 'Baker', 'Ancient Grain': 'Baker','Flour Mill',
+    'Wheat': 'Baker', 'Mountain Wheat': 'Baker', 'Ancient Grain': 'Flour Mill',
     'Dried Apples': 'Grocer', 'Tropical Mango': 'Grocer', 'Mountain Berries': 'Grocer',
     
     // Livestock
